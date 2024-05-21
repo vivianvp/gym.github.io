@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>More About Gym Crowd Management</h1>
+    </header>
+    <main>
+        <div id="chart-container" style="width:100%; height:400px;">
+            <canvas id="myChart"></canvas>
+        </div>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="image1.png" alt="Gym Image 1">
+        </section>
+        <form id="crowdPredictForm" action="submit_form.php" method="POST">
+            <h3>Find the Best Time to Visit</h3>
+            <label for="month">Month:</label>
+            <input type="number" id="month" name="month" min="1" max="12" required>
+            
+            <label for="day">Day:</label>
+            <input type="number" id="day" name="day" min="1" max="31" required>
+            
+            <label for="hour">Hour:</label>
+            <input type="number" id="hour" name="hour" min="0" max="23" required>
+            
+            <label for="is_start_semester">Start of Semester:</label>
+            <select id="is_start_semester" name="is_start_semester">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <label for="is_holiday">Holiday:</label>
+            <select id="is_holiday" name="is_holiday">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <button onclick="window.location.href='index.html';">Back to Home</button>
+    </footer>
+    <script src="chart-setup.js"></script>
+</body>
+</html>

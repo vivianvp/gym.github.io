@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Crowd Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="chat.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Optimize Your Gym Visits</h1>
+            <p>Discover the best times to visit the gym and avoid the crowd.</p>
+        </header>
+        <main>
+            <video id="gymVideo" autoplay loop muted>
+                <source src="gymVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button onclick="window.location.href='content.html';">Explore More</button>
+        </main>
+        <footer>
+            <p>Powered by Data-Driven Insights to Enhance Your Gym Experience</p>
+        </footer>
+    </div>
+    <div class="chat-box">
+        <div class="chat-header">
+            <h4>Live Chat</h4>
+            <button class="chat-toggle" onclick="toggleChat()">-</button>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Type your message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+</html>
